@@ -32,8 +32,4 @@ Actuellement en **1ère année de BTS SIO (Services Informatiques aux Organisati
 
 ---
 
-## 🚀 Utilisation et Déploiement
 
-1. Clone le dépôt sur ta machine :
-   ```bash
-   git clone [https://github.com/ton-nom-d-utilisateur/nom-du-repo.git](https://github.com/ton-nom-d-utilisateur/nom-du-repo.git)
