@@ -241,6 +241,105 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+        /* --- STYLE DES PROJETS --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .project-card {
+            background: var(--box-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-color: var(--gray-light);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .project-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .project-status {
+            font-size: 0.75em;
+            color: var(--secondary);
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+        
+        .project-content h3 {
+            font-size: 1.1em;
+            margin: 0 0 10px 0;
+            color: var(--primary);
+        }
+        
+        .project-content p {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .tag {
+            background-color: var(--primary);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+        
+        .project-footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+            margin-top: auto;
+        }
+        
+        .github-link {
+            text-decoration: none;
+            color: var(--secondary);
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
